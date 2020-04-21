@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Fórmula general</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+
+
+		function formulaGeneral(a, b, c){
+			var d; 
+			var x1;
+			var x2;
+
+			d = Math.pow(b,2) - 4*a*c;
+
+		if(d > 0 ){
+			x1 = (-b + Math.sqrt(d)) / (2 * a);
+			x2 = (-b - Math.sqrt(d)) / (2 * a);
+			document.write("La ecuación tiene dos soluciones, que son números reales distintos:");
+			document.write( "Valores ingresados: " + "<br>" + a + "x^2 " + b + "x " + c + " = 0");
+			document.write("<br>x1= "+ x1 + "<br> x2= "+ x2);
+		}
+		else{
+			document.write("La solución no es real");
+		}
+	}
+
+	var a = prompt("Introduce el valor de x^2:"); // "a" de la ecuacion
+	var b = prompt("Introduce el valor de x (agrega el signo):"); // "b" de la ecuacion
+	var c = prompt("Introduce el valor del término independiente:"); // "c" de la ecuacion
+
+	formulaGeneral(a,b,c);
+
+
+			
+
+
+	/*var d; // Discriminate
+			var x1; // d > 0
+			var x2; // d > 0
+	var a = prompt("Introduce a:"); // "a" de la ecuacion
+	var b = prompt("Introduce b:"); // "b" de la ecuacion
+	var c = prompt("Introduce c:"); // "c" de la ecuacion
+	//Con esta Ecuacion calculamos la discriminante
+		
+		d = Math.pow(b,2) - 4*a*c;
+
+	
+
+		if(d > 0 ){
+			x1 = (-b + Math.sqrt(d)) / (2 * a);
+			x2 = (-b - Math.sqrt(d)) / (2 * a);
+			document.write("La ecuación tiene dos soluciones, que son números reales distintos:" + "<br>x1= "+ x1 + "<br> x2= "+ x2);
+		}
+		else{
+			document.write("La solución no es real");
+		}*/
+		
+	</script>
+</body>
+</html>
